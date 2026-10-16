@@ -59,7 +59,7 @@ function getBlessed() {
     }
     if (gameData.stardust >= upgradecosts.getblessed) {
         gameData.stardust = gameData.stardust - upgradecosts.getblessed
-        upgrades.blessed = upgrades.blessed + 0.2
+        upgrades.blessed = upgrades.blessed + 0.2 //figure out how to make decimal not show up in Stardust amount
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
         document.getElementById("getBlessed").innerHTML = "Manage to make a project that made the HackClub staff very happy, 1.2x boost to stardust gain!; BOUGHT!"
     }
