@@ -1,32 +1,54 @@
 var gameData = {
-    stardust: 1999, // control according to will during testing //
+    stardust: 1999999, // control according to will during testing
     stardustPerUpload: 1,
-    stardustPerUploadCost: 10,
+}
+
+var upgrades = {
     helpers: 1,
-    buyHelpersCost: 1500
+    coffee: 0,
+}
+
+var upgradecosts = {
+    stardustPerUploadCost: 10,
+    buyHelpersCost: 1500,
+    buycoffee: 3000,
 }
 
 function uploadProject() {
-    gameData.stardust += gameData.stardustPerUpload * gameData.helpers
+    gameData.stardust += ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))
     document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
 }
 
-function buyStardustPerUpload() {
-    if (gameData.stardust >= gameData.stardustPerUploadCost) {
-        gameData.stardust = gameData.stardust - gameData.stardustPerUploadCost
+function buyStardustPerUpload() { // recurring upgrade 1
+    if (gameData.stardust >= upgradecosts.stardustPerUploadCost) {
+        gameData.stardust = gameData.stardust - upgradecosts.stardustPerUploadCost
         gameData.stardustPerUpload = gameData.stardustPerUpload + 1
-        gameData.stardustPerUploadCost = gameData.stardustPerUploadCost * 2
+        upgradecosts.stardustPerUploadCost = upgradecosts.stardustPerUploadCost * 2
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"    
-        document.getElementById("buyStardustPerUpload").innerHTML = "Increase Stardust Gain(Level " + gameData.stardustPerUpload + ") Cost: " + gameData.stardustPerUploadCost + " Stardust"
+        document.getElementById("buyStardustPerUpload").innerHTML = "Increase Stardust Gain(current level " + gameData.stardustPerUpload + ") next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
     }
 }
 
-function buyHelpers() {
-    if (gameData.stardust >= gameData.buyHelpersCost) {
-        gameData.stardust = gameData.stardust - gameData.buyHelpersCost
-        gameData.helpers = gameData.helpers + 1
-        gameData.buyHelpersCost = gameData.buyHelpersCost * 1.25
+function buyHelpers() { // recurring upgrade 2
+    if (gameData.stardust >= upgradecosts.buyHelpersCost) {
+        gameData.stardust = gameData.stardust - upgradecosts.buyHelpersCost
+        upgrades.helpers = upgrades.helpers + 1
+        upgradecosts.buyHelpersCost = Math.ceil(upgradecosts.buyHelpersCost * 1.25)
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"  
-        document.getElementById("buyHelpers").innerHTML = "Buy Helpers(more stardust per upload)(level " + gameData.helpers + ") cost: " + gameData.buyHelpersCost + " stardust"
+        document.getElementById("buyHelpers").innerHTML = "Buy Helpers(more stardust per upload)(current level " + upgrades.helpers + ") next-cost: " + upgradecosts.buyHelpersCost + " stardust"
     }
 }
+
+function buyCoffee() {
+     if (upgrades.coffee > 0) {
+        return;
+    }
+    if (gameData.stardust >= upgradecosts.buycoffee) {
+        gameData.stardust = gameData.stardust - upgradecosts.buycoffee
+        upgrades.coffee = upgrades.coffee + 1
+        document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
+        document.getElementById("buyCoffee").innerHTML = "chug some coffee and double your total stardust gain; BOUGHT"
+    }
+}
+
+
