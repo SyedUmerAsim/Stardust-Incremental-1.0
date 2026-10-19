@@ -16,6 +16,15 @@ var upgradecosts = {
     getblessed: 5000,
 }
 
+var prestigeData = {
+
+}
+
+var permanentData = {
+
+}
+
+
 function uploadProject() {
     gameData.stardust += ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers)))
     document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
@@ -61,6 +70,6 @@ function getBlessed() {
         gameData.stardust = gameData.stardust - upgradecosts.getblessed
         upgrades.blessed = upgrades.blessed + 0.2 //figure out how to make decimal not show up in Stardust amount
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
-        document.getElementById("getBlessed").innerHTML = "Manage to make a project that made the HackClub staff very happy, 1.2x boost to stardust gain!; BOUGHT!"
+        document.getElementById("getBlessed").innerHTML = "1.2x boost to stardust gain!; BOUGHT!"
     }
 }
