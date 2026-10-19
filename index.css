@@ -21,3 +21,12 @@ body{
 #buyStardustPerUpload {
     transform: translate(560px);
 }
+
+.helpers {
+    transform: translate(120px);
+    color: blanchedalmond;
+}
+
+#buyHelpers {
+    transform: translate(436px);
+}

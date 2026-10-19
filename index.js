@@ -21,9 +21,8 @@ var prestigeData = {
 }
 
 var permanentData = {
-
+    
 }
-
 
 function uploadProject() {
     gameData.stardust += ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers)))
@@ -36,7 +35,7 @@ function buyStardustPerUpload() { // recurring upgrade 1
         gameData.stardustPerUpload = gameData.stardustPerUpload + 1
         upgradecosts.stardustPerUploadCost = upgradecosts.stardustPerUploadCost * 2
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"    
-        document.getElementById("buyStardustPerUpload").innerHTML = "next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
+        document.getElementById("buyStardustPerUpload").innerHTML = "current level " + gameData.stardustPerUpload + ", next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
     }
 }
 
