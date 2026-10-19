@@ -8,10 +8,17 @@
 </head>
 <body>
     <p id="stardustcount">0 Stardust</p>
-    <div><button onclick="uploadProject()">Upload Project</button></div>
-    <div><button onclick="buyStardustPerUpload()" id="buyStardustPerUpload">Increase Stardust Gain(current level 1) next-cost: 10 Stardust</button></div>
+    <br>
+    <div><button onclick="uploadProject()" id="uploadproject"><img src="rocket.png" alt="Rocket png" height="85"></button></div>
+    <br>
+    <div class="increaseStardustGain">Increase Stardust Gain(current level 1) 
+        <button onclick="buyStardustPerUpload()" id="buyStardustPerUpload">next-cost: 10 Stardust</button>
+    </div>
+    <br>
     <div><button onclick="buyHelpers()" id="buyHelpers">Buy Helpers(more stardust per upload)(current level 1) next-cost: 1500 Stardust</button></div>
-    <div><button onclick="buyCoffee()" id="buyCoffee">chug some coffee and double your total stardust gain, cost: 3000 Stardust</button></div>
+    <br>
+    <div><button onclick="buyCoffee()" id="buyCoffee">chug some coffee and double your total    stardust gain, cost: 3000 Stardust</button></div>
+    <br>
     <div><button onclick="getBlessed()" id="getBlessed"> 1.2x boost to stardust gain!; cost: 5000 Stardust</button></div>
     
     <script src="index.js"></script>

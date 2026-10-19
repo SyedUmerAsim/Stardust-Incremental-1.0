@@ -5,5 +5,19 @@ body{
 #stardustcount {
     color:rgb(151, 151, 90);
     font-size: 30px;
+    transform: translate(565px);;
 }
 
+#uploadproject {
+    height: 90px;
+    transform: translate(565px);
+}
+
+.increaseStardustGain {
+    transform: translate(120px);   
+    color:blanchedalmond;
+}
+
+#buyStardustPerUpload {
+    transform: translate(560px);
+}
