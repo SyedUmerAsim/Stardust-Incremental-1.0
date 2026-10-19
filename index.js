@@ -45,7 +45,7 @@ function buyHelpers() { // recurring upgrade 2
         upgrades.helpers = upgrades.helpers + 1
         upgradecosts.buyHelpersCost = Math.ceil(upgradecosts.buyHelpersCost * 1.25)
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"  
-        document.getElementById("buyHelpers").innerHTML = "Buy Helpers(more stardust per upload)(current level " + upgrades.helpers + ") next-cost: " + upgradecosts.buyHelpersCost + " stardust"
+        document.getElementById("buyHelpers").innerHTML = "current level " + upgrades.helpers + " next-cost: " + upgradecosts.buyHelpersCost + " stardust"
     }
 }
 
