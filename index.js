@@ -36,7 +36,7 @@ function buyStardustPerUpload() { // recurring upgrade 1
         gameData.stardustPerUpload = gameData.stardustPerUpload + 1
         upgradecosts.stardustPerUploadCost = upgradecosts.stardustPerUploadCost * 2
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"    
-        document.getElementById("buyStardustPerUpload").innerHTML = "Increase Stardust Gain(current level " + gameData.stardustPerUpload + ") next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
+        document.getElementById("buyStardustPerUpload").innerHTML = "next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
     }
 }
 
