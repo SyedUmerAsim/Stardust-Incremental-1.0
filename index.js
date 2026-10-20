@@ -17,6 +17,7 @@ var upgradecosts = {
 }
 
 var prestigeData = {
+    requirement: 55000,
 
 }
 
@@ -79,3 +80,20 @@ function getBlessed() {
         document.getElementsByClassName("prestigetext")[0].style.visibility = "visible"
     }
 }
+
+function doPrestige() {
+    if (gameData.stardust >= prestigeData.requirement) {
+        gameData.stardust = 0
+        gameData.stardustPerUpload = 1
+        upgrades.helpers = 1
+        upgrades.coffee = 0
+        upgrades.blessed = 0
+        upgradecosts.stardustPerUploadCost = 10
+        upgradecosts.buyHelpersCost = 1500
+        upgradecosts.buycoffee = 3000
+        upgradecosts.getblessed = 5000
+    }
+}
+
+
+
