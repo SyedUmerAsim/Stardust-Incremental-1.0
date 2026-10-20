@@ -47,6 +47,12 @@ function buyHelpers() { // recurring upgrade 2
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"  
         document.getElementById("buyHelpers").innerHTML = "current level " + upgrades.helpers + " next-cost: " + upgradecosts.buyHelpersCost + " stardust"
     }
+    if (upgrades.helpers >= 4) {
+            document.getElementsByClassName("coffee")[0].style.display = "block";
+    }
+    if (upgrades.helpers >= 6) {
+            document.getElementsByClassName("blessed")[0].style.display = "block";
+    }   
 }
 
 function buyCoffee() {

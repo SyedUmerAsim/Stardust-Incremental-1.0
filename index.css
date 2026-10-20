@@ -41,6 +41,7 @@ body{
 }
 
 .coffee { 
+    display: none;
     transform: translate(120px);
     color: blanchedalmond;
     font-family: system-ui;
@@ -55,6 +56,7 @@ body{
     transform: translate(120px);
     color: blanchedalmond;
     font-family: system-ui;
+    display: none;
 }
 
 #getBlessed { /*button*/
