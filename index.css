@@ -1,6 +1,4 @@
-main, body {
-    overflow: hidden;
-}
+
 
 body{
     background-color: rgb(3, 3, 40);
@@ -62,4 +60,13 @@ body{
 #getBlessed { /*button*/
     transform: translate(574px);
     font-family: system-ui;
+}
+
+.prestigetext{
+    position: absolute;
+    left: 120px;
+    top: 450px;
+    color:blanchedalmond;
+    font-size: 21px;
+    visibility: hidden;
 }

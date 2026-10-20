@@ -48,10 +48,10 @@ function buyHelpers() { // recurring upgrade 2
         document.getElementById("buyHelpers").innerHTML = "current level " + upgrades.helpers + " next-cost: " + upgradecosts.buyHelpersCost + " stardust"
     }
     if (upgrades.helpers >= 4) {
-            document.getElementsByClassName("coffee")[0].style.display = "block";
+            document.getElementsByClassName("coffee")[0].style.display = "block"
     }
     if (upgrades.helpers >= 6) {
-            document.getElementsByClassName("blessed")[0].style.display = "block";
+            document.getElementsByClassName("blessed")[0].style.display = "block"
     }   
 }
 
@@ -76,5 +76,6 @@ function getBlessed() {
         upgrades.blessed = upgrades.blessed + 0.2 //figure out how to make decimal not show up in Stardust amount
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
         document.getElementById("getBlessed").innerHTML = "BOUGHT!"
+        document.getElementsByClassName("prestigetext")[0].style.visibility = "visible"
     }
 }
