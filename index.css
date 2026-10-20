@@ -14,7 +14,7 @@ body{
 }
 
 .increaseStardustGain {
-    transform: translate(120px);   
+    transform: translate(120px);    
     color:blanchedalmond;
 }
 
@@ -29,4 +29,22 @@ body{
 
 #buyHelpers {
     transform: translate(436px);
+}
+
+.coffee {
+    transform: translate(120px);
+    color: blanchedalmond;
+}
+
+#buyCoffee {
+    transform: translate(415px);
+}
+
+.blessed {
+    transform: translate(120px);
+    color: blanchedalmond;
+}
+
+#getBlessed {
+    transform: translate(580px);
 }

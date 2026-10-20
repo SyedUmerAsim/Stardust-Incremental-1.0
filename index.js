@@ -57,7 +57,7 @@ function buyCoffee() {
         gameData.stardust = gameData.stardust - upgradecosts.buycoffee
         upgrades.coffee = upgrades.coffee + 1
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
-        document.getElementById("buyCoffee").innerHTML = "chug some coffee and double your total stardust gain; BOUGHT"
+        document.getElementById("buyCoffee").innerHTML = "BOUGHT!"
     }
 }
 
@@ -69,6 +69,6 @@ function getBlessed() {
         gameData.stardust = gameData.stardust - upgradecosts.getblessed
         upgrades.blessed = upgrades.blessed + 0.2 //figure out how to make decimal not show up in Stardust amount
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
-        document.getElementById("getBlessed").innerHTML = "1.2x boost to stardust gain!; BOUGHT!"
+        document.getElementById("getBlessed").innerHTML = "BOUGHT!"
     }
 }
