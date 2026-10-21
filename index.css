@@ -70,3 +70,19 @@ body{
     font-size: 21px;
     visibility: hidden;
 }
+
+.prestigeinfo {
+    position: absolute;
+    left: 120px;
+    top: 500px;
+    color:blanchedalmond;
+    font-size: 21px;
+    visibility: hidden;
+}
+
+#doPrestige {
+    transform: translate(187px);
+    height: 50px;
+    width: 110px;
+
+}

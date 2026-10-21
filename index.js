@@ -1,8 +1,7 @@
 var gameData = {
-    stardust: 1999999, // control according to will during testing
+    stardust: 199999, // control according to will during testing
     stardustPerUpload: 1,
 }
-
 var upgrades = {
     helpers: 1,
     coffee: 0,
@@ -26,7 +25,7 @@ var permanentData = {
 }
 
 function uploadProject() {
-    gameData.stardust += ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers)))
+    gameData.stardust += Math.ceil(((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
     document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
 }
 
@@ -77,7 +76,8 @@ function getBlessed() {
         upgrades.blessed = upgrades.blessed + 0.2 //figure out how to make decimal not show up in Stardust amount
         document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
         document.getElementById("getBlessed").innerHTML = "BOUGHT!"
-        document.getElementsByClassName("prestigetext")[0].style.visibility = "visible"
+        document.getElementsByClassName("prestigetext")[0].style.visibility = "visible" 
+        document.getElementsByClassName("prestigeinfo")[0].style.visibility = "visible" 
     }
 }
 
@@ -92,6 +92,14 @@ function doPrestige() {
         upgradecosts.buyHelpersCost = 1500
         upgradecosts.buycoffee = 3000
         upgradecosts.getblessed = 5000
+        document.getElementById("stardustcount").innerHTML = "0 Stardust"
+        document.getElementById("buyStardustPerUpload").innerHTML = "current level " + gameData.stardustPerUpload + ", next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
+        document.getElementById("buyHelpers").innerHTML = "current level " + upgrades.helpers + " next-cost: " + upgradecosts.buyHelpersCost + " stardust"
+        document.getElementById("buyCoffee").innerHTML = "cost: 3000 Stardust"
+        document.getElementsByClassName("coffee")[0].style.display = "none"
+        document.getElementById("getBlessed").innerHTML = "cost: 5000 Stardust"
+        document.getElementsByClassName("blessed")[0].style.display = "none"
+
     }
 }
 
