@@ -1,5 +1,5 @@
 var gameData = {
-    stardust: 199999, // control according to will during testing
+    stardust: 0, // control according to will during testing
     stardustPerUpload: 1,
 }
 var upgrades = {
@@ -11,12 +11,13 @@ var upgrades = {
 var upgradecosts = {
     stardustPerUploadCost: 10,
     buyHelpersCost: 1500,
-    buycoffee: 3000,
-    getblessed: 5000,
+    buycoffee: 5000,
+    getblessed: 8000,
 }
 
 var prestigeData = {
     requirement: 55000,
+    superstars: 0,
 
 }
 
@@ -90,16 +91,17 @@ function doPrestige() {
         upgrades.blessed = 0
         upgradecosts.stardustPerUploadCost = 10
         upgradecosts.buyHelpersCost = 1500
-        upgradecosts.buycoffee = 3000
-        upgradecosts.getblessed = 5000
+        upgradecosts.buycoffee = 5000
+        upgradecosts.getblessed = 8000
+        prestigeData.superstars = prestigeData.superstars + 1
         document.getElementById("stardustcount").innerHTML = "0 Stardust"
         document.getElementById("buyStardustPerUpload").innerHTML = "current level " + gameData.stardustPerUpload + ", next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
         document.getElementById("buyHelpers").innerHTML = "current level " + upgrades.helpers + " next-cost: " + upgradecosts.buyHelpersCost + " stardust"
-        document.getElementById("buyCoffee").innerHTML = "cost: 3000 Stardust"
+        document.getElementById("buyCoffee").innerHTML = "cost: 5000 Stardust"
         document.getElementsByClassName("coffee")[0].style.display = "none"
-        document.getElementById("getBlessed").innerHTML = "cost: 5000 Stardust"
+        document.getElementById("getBlessed").innerHTML = "cost: 8000 Stardust"
         document.getElementsByClassName("blessed")[0].style.display = "none"
-
+        document.getElementById("prestigecount").innerHTML = prestigeData.superstars + " Super Stars"
     }
 }
 
