@@ -18,16 +18,18 @@ var upgradecosts = {
 var prestigeData = {
     requirement: 55000,
     superstars: 0,
+    prestigecount: 0,
     prestigeupg1: 2,
     prestigeupg2: 5,
 }
 
 var permanentData = {
-   
+   prestigecountboost: 0,
+   prestigeupg1count: 0,
 }
 
 function uploadProject() {
-    gameData.stardust += Math.ceil((1) * ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
+    gameData.stardust += Math.ceil((prestigeData.prestigecount * permanentData.prestigecountboost) + ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
     document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
 }
 
@@ -85,7 +87,7 @@ function getBlessed() {
 
 function doPrestige() {
     if (gameData.stardust >= prestigeData.requirement) {
-        gameData.stardust = 0
+        gameData.stardust = 19999999999
         gameData.stardustPerUpload = 1
         upgrades.helpers = 1
         upgrades.coffee = 0
@@ -94,6 +96,7 @@ function doPrestige() {
         upgradecosts.buyHelpersCost = 1500
         upgradecosts.buycoffee = 5000
         upgradecosts.getblessed = 8000
+        prestigeData.prestigecount = prestigeData.prestigecount + 1
         prestigeData.superstars = prestigeData.superstars + 1
         document.getElementById("stardustcount").innerHTML = "0 Stardust"
         document.getElementById("buyStardustPerUpload").innerHTML = "current level " + gameData.stardustPerUpload + ", next-cost: " + upgradecosts.stardustPerUploadCost + " Stardust"
@@ -102,7 +105,21 @@ function doPrestige() {
         document.getElementsByClassName("coffee")[0].style.display = "none"
         document.getElementById("getBlessed").innerHTML = "cost: 8000 Stardust"
         document.getElementsByClassName("blessed")[0].style.display = "none"
+        document.getElementsByClassName("prestigecount")[0].innerHTML = prestigeData.prestigecount + " Prestiges"
+        document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
     }
 }
 
+function prestigeupg1() {
+    if (permanentData.prestigeupg1count > 0) {
+        return;
+    }
+    if (prestigeData.superstars >= 2) {
+        prestigeData.superstars = prestigeData.superstars - 2
+        permanentData.prestigecountboost = 5
+        permanentData.prestigeupg1count = permanentData.prestigeupg1count + 1
+        document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
+        document.getElementById("prestigeupg1").innerHTML = "BOUGHT!"
+    }
+}
 
