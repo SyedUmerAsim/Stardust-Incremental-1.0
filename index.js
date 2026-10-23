@@ -90,6 +90,7 @@ function getBlessed() {
 
 function doPrestige() {
     if (gameData.stardust >= prestigeData.requirement) {
+        prestigeData.requirement = prestigeData.requirement + 10000 //still gotta testout to make sure game is balanced
         gameData.stardust = 19999999999
         gameData.stardustPerUpload = 1
         upgrades.helpers = 1
@@ -110,6 +111,7 @@ function doPrestige() {
         document.getElementsByClassName("blessed")[0].style.display = "none"
         document.getElementsByClassName("prestigecount")[0].innerHTML = prestigeData.prestigecount + " Prestiges"
         document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
+        document.getElementsByClassName("prestigetext")[0].innerHTML = "Prestige Requirement: " + prestigeData.requirement + " Stardust!"
     }
 }
 
