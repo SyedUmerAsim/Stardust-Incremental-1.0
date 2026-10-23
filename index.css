@@ -86,23 +86,35 @@ body{
     transform: translate(187px);
     height: 50px;
     width: 110px;
-
 }
 
-#prestigecount {
+.prestigecount {
     color:blanchedalmond;
-    font-size: 21px;
-    transform: translate(600px, 250px);
+    font-size: 31px;
     font-family: system-ui;
+    transform: translate(580px, 265px);
+}
+
+#superstarcount {
+    color:blanchedalmond;
+    font-size: 31px;
+    transform: translate(580px, 250px);
+    font-family: system-ui;
+}
+
+#pupgtext {
+    color: blanchedalmond;
+    font-size: 30px;
+    font-family: system-ui;
+    transform: translate(580px, 230px);
 }
 
 .prestigeupgs {
     color:blanchedalmond;
     font-size: 21px;
-    transform: translate(112px, 275px);
-}
-
-#prestigeupg1 {
-    transform: translate(572px);
-    
+    font-family: system-ui;
+    transform: translate(107px, 280px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
 }

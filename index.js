@@ -1,5 +1,5 @@
 var gameData = {
-    stardust: 0, // control according to will during testing
+    stardust: 1999999, // control according to will during testing
     stardustPerUpload: 1,
 }
 var upgrades = {
@@ -27,7 +27,7 @@ var permanentData = {
 }
 
 function uploadProject() {
-    gameData.stardust += Math.ceil((prestigeData.totalprestigesmult) * ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
+    gameData.stardust += Math.ceil((1) * ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
     document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
 }
 
@@ -102,7 +102,6 @@ function doPrestige() {
         document.getElementsByClassName("coffee")[0].style.display = "none"
         document.getElementById("getBlessed").innerHTML = "cost: 8000 Stardust"
         document.getElementsByClassName("blessed")[0].style.display = "none"
-        document.getElementById("prestigecount").innerHTML = prestigeData.superstars + " Super Stars"
     }
 }
 
