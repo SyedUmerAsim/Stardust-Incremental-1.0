@@ -18,15 +18,16 @@ var upgradecosts = {
 var prestigeData = {
     requirement: 55000,
     superstars: 0,
-
+    prestigeupg1: 2,
+    prestigeupg2: 5,
 }
 
 var permanentData = {
-    
+   
 }
 
 function uploadProject() {
-    gameData.stardust += Math.ceil(((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
+    gameData.stardust += Math.ceil((prestigeData.totalprestigesmult) * ((1 + upgrades.blessed) * ((1 + upgrades.coffee) * (gameData.stardustPerUpload * upgrades.helpers))))
     document.getElementById("stardustcount").innerHTML = gameData.stardust + " Stardust"
 }
 
@@ -104,6 +105,5 @@ function doPrestige() {
         document.getElementById("prestigecount").innerHTML = prestigeData.superstars + " Super Stars"
     }
 }
-
 
 
