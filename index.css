@@ -7,8 +7,15 @@ body{
 #stardustcount {
     color:rgb(151, 151, 90);
     font-size: 30px;
-    transform: translate(515px);
+    transform: translate(545px);
     font-family: system-ui;
+}
+
+#info {
+    color:blanchedalmond;
+    position: absolute;
+    top: 70px;
+    left: 450px;
 }
 
 #uploadproject { /*just a button with an image*/
@@ -68,7 +75,7 @@ body{
     top: 450px;
     color:blanchedalmond;
     font-size: 21px;
-    visibility: visible;
+    visibility: hidden;
     font-family: system-ui;
 }
 
@@ -78,7 +85,7 @@ body{
     top: 500px;
     color:blanchedalmond;
     font-size: 21px;
-    visibility: visible;
+    visibility: hidden;
     font-family: system-ui;
 }
 
@@ -100,6 +107,10 @@ body{
     font-size: 31px;
     transform: translate(580px, 250px);
     font-family: system-ui;
+}
+
+#prestigestuffs {
+    visibility: hidden;
 }
 
 #pupgtext {

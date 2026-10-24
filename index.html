@@ -8,6 +8,7 @@
 </head>
 <body>
     <p id="stardustcount">0 Stardust</p>
+    <p id="info">2 new upgrades unlock when you buy more Helpers</p>
     <br>
     <div><button onclick="uploadProject()" id="uploadproject"><img src="rocket.png" alt="Rocket png" height="85"></button></div>
     <br>
@@ -27,27 +28,27 @@
         <button onclick="getBlessed()" id="getBlessed">cost: 8000 Stardust</button>
     </div>
 
-
-    <div class="prestigetext">
-        Prestige Requirement: 55,000 stardust!
+    <div id="prestigestuffs">
+        <div class="prestigetext">
+            Prestige Requirement: 55,000 stardust!
+        </div>
+        <div class="prestigeinfo">Reset all your progress before this point(Prestige), in exchance for 1 Super Star
+            <button onclick="doPrestige()" id="doPrestige">Prestige!</button>
+        </div>
+        <div class="prestigecount">0 Prestiges</div>
+        <br>
+        <br>
+        <p id="superstarcount">0 Super Stars</p>
+        <br>
+        <p id="pupgtext">UPGRADES!</p>
+        <div class="prestigeupgs">
+            <div id="prestigeupg1text">Total Prestiges boost stardust gain <button onclick="prestigeupg1()" id="prestigeupg1">1 Super Stars</button></div>
+            <div id="prestigeupg2text">Give Super Star a multiplier of 2x(2x gain) <button onclick="prestigeupg2()" id="prestigeupg2">3 Stardust</button></div>
+            <div id="prestigeupg3text">Every 10 Prestiges, get 1+ multiplier to Super Star gain<button onclick="prestigeupg3()" id="prestigeupg3">10 Super Stars</button></div>
+            <div id="prestigeupg4text">Reduce prestige requirement increase by -5,000 Stardust <button onclick="prestigeupg4()" id="prestigeupg4">20 Super Stars</button></div>
+            <div id="prestigeupg5text">Reduce requirement of 2nd prestige upgrade by -5 <button onclick="prestigeupg5()" id="prestigeupg5">40 Super Stars</button></div>
+        </div>
     </div>
-    <div class="prestigeinfo">Reset all your progress before this point(Prestige), in exchance for 1 Super Star
-        <button onclick="doPrestige()" id="doPrestige">Prestige!</button>
-    </div>
-    <div class="prestigecount">0 Prestiges</div>
-    <br>
-    <br>
-    <p id="superstarcount">0 Super Stars</p>
-    <br>
-    <p id="pupgtext">UPGRADES!</p>
-    <div class="prestigeupgs">
-        <div id="prestigeupg1text">Total Prestiges boost stardust gain <button onclick="prestigeupg1()" id="prestigeupg1">2 Super Stars</button></div>
-        <div id="prestigeupg2text">Give Super Star a multiplier of 2x(2x gain) <button onclick="prestigeupg2()" id="prestigeupg2">5 Stardust</button></div>
-        <div id="prestigeupg3text">Every 10 Prestiges, get 1+ multiplier to Super Star gain<button onclick="prestigeupg3()" id="prestigeupg3">10 Super Stars</button></div>
-        <div id="prestigeupg4text">Reduce prestige requirement increase by -5,000 Stardust <button onclick="prestigeupg4()" id="prestigeupg4">20 Super Stars</button></div>
-        <div id="prestigeupg5text">Reduce requirement of 2nd prestige upgrade by -5 <button onclick="prestigeupg5()" id="prestigeupg5">40 Super Stars</button></div>
-    </div>
-    
     
     <script src="index.js"></script>
 </body>
