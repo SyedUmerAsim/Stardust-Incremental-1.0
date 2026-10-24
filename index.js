@@ -17,16 +17,23 @@ var upgradecosts = {
 
 var prestigeData = {
     requirement: 55000,
+    requirementinc: 10000,
     superstars: 0,
     prestigecount: 0,
     prestigeupg1: 2,
     prestigeupg2: 5,
+    prestigeupg3: 10,
+    prestigeupg4: 20,
+    prestigeupg5: 40,
 }
 
 var permanentData = {
    prestigecountboost: 0,
    prestigeupg1count: 0,
+   prestigeupg2count: 0,
    prestigeupg3count: 0,
+   prestigeupg4count: 0,
+   prestigeupg5count: 0,
    superstar2xmult: 0,
    superstarmult: 0,
 }
@@ -90,7 +97,7 @@ function getBlessed() {
 
 function doPrestige() {
     if (gameData.stardust >= prestigeData.requirement) {
-        prestigeData.requirement = prestigeData.requirement + 10000 //still gotta testout to make sure game is balanced
+        prestigeData.requirement = prestigeData.requirement + prestigeData.requirementinc //still gotta testout to make sure game is balanced
         gameData.stardust = 19999999999
         gameData.stardustPerUpload = 1
         upgrades.helpers = 1
@@ -119,8 +126,8 @@ function prestigeupg1() {
     if (permanentData.prestigeupg1count > 0) {
         return;
     }
-    if (prestigeData.superstars >= 2) {
-        prestigeData.superstars = prestigeData.superstars - 2
+    if (prestigeData.superstars >= prestigeData.prestigeupg1) {
+        prestigeData.superstars = prestigeData.superstars - prestigeData.prestigeupg1
         permanentData.prestigecountboost = 5
         permanentData.prestigeupg1count = permanentData.prestigeupg1count + 1
         document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
@@ -129,18 +136,26 @@ function prestigeupg1() {
 }
 
 function prestigeupg2() {
-    if (prestigeData.superstars >= 5) {
-        prestigeData.superstars = prestigeData.superstars - 5
+    if (permanentData.prestigeupg2count > 0) {
+        return;
+    }
+    if (prestigeData.superstars >= prestigeData.prestigeupg2) {
+        prestigeData.superstars = prestigeData.superstars - prestigeData.prestigeupg2
         permanentData.superstar2xmult = permanentData.superstar2xmult + 1
+        permanentData.prestigeupg2count = permanentData.prestigeupg2count + 1
         document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
         document.getElementById("prestigeupg2").innerHTML = "BOUGHT!"
     }
 }
 
 function prestigeupg3() {
-    if (prestigeData.superstars >= 10) {
-        prestigeData.superstars = prestigeData.superstars - 10
+    if (permanentData.prestigeupg3count > 0) {
+        return;
+    }
+    if (prestigeData.superstars >= prestigeData.prestigeupg3) {
+        prestigeData.superstars = prestigeData.superstars - prestigeData.prestigeupg3
         permanentData.superstarmult = 1
+        permanentData.prestigeupg3count = permanentData.prestigeupg3count + 1
         document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
         document.getElementById("prestigeupg3").innerHTML = "BOUGHT!"
     }
