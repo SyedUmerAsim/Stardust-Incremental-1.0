@@ -160,3 +160,16 @@ function prestigeupg3() {
         document.getElementById("prestigeupg3").innerHTML = "BOUGHT!"
     }
 }
+
+function prestigeupg4() {
+    if (permanentData.prestigeupg4count > 0) {
+        return;
+    }
+    if (prestigeData.superstars >= prestigeData.prestigeupg4)
+        prestigeData.superstars = prestigeData.superstars - prestigeData.prestigeupg4
+        prestigeData.requirementinc = 5000
+        permanentData.prestigeupg4count = permanentData.prestigeupg4count + 1
+        document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
+        document.getElementById("prestigeupg4").innerHTML = "BOUGHT!"
+}
+
