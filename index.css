@@ -56,10 +56,15 @@ body{
 }
 
 .coffee { 
-    display: none;
     transform: translate(120px);
     color: blanchedalmond;
     font-family: system-ui;
+    border: 2px solid blanchedalmond;
+    display: none;
+    align-items: center;
+    gap: 387px;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
 #buyCoffee { /*button*/
@@ -70,11 +75,15 @@ body{
     transform: translate(120px);
     color: blanchedalmond;
     font-family: system-ui;
+   border: 2px solid blanchedalmond;
     display: none;
+    align-items: center;
+    gap: 316px;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
 #getBlessed { /*button*/
-    transform: translate(315px);
     font-family: system-ui;
 }
 

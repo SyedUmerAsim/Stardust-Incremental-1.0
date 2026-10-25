@@ -63,11 +63,11 @@ function buyHelpers() { // recurring upgrade 2
         document.getElementById("buyHelpers").innerHTML = "current level " + upgrades.helpers + " next-cost: " + upgradecosts.buyHelpersCost + " stardust"
     }
     if (upgrades.helpers >= 4) {
-            document.getElementsByClassName("coffee")[0].style.display = "block"
+            document.getElementsByClassName("coffee")[0].style.display = "inline-flex"
             document.getElementById("info").innerHTML = "1 new upgrade unlocks when you buy more helpers"
     }
     if (upgrades.helpers >= 6) {
-            document.getElementsByClassName("blessed")[0].style.display = "block"
+            document.getElementsByClassName("blessed")[0].style.display = "inline-flex"
             document.getElementById("info").innerHTML = "a new feature unlocks after buying 4th upgrade(8k stardust)"
     }   
 }
