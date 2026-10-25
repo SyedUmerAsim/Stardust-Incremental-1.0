@@ -27,10 +27,15 @@ body{
     transform: translate(120px);    
     color:blanchedalmond;
     font-family: system-ui;
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 536px;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
 #buyStardustPerUpload { /*button*/
-    transform: translate(560px);
     font-family: system-ui; 
 }
 
@@ -38,10 +43,15 @@ body{
     transform: translate(120px);
     color: blanchedalmond;
     font-family: system-ui;
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 426px;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
 #buyHelpers { /*button*/
-    transform: translate(426px);
     font-family: system-ui;
 }
 
@@ -53,7 +63,6 @@ body{
 }
 
 #buyCoffee { /*button*/
-    transform: translate(389px);
     font-family: system-ui;
 }
 
@@ -65,7 +74,7 @@ body{
 }
 
 #getBlessed { /*button*/
-    transform: translate(574px);
+    transform: translate(315px);
     font-family: system-ui;
 }
 
@@ -89,7 +98,7 @@ body{
     font-family: system-ui;
 }
 
-#doPrestige {
+#doPrestige { /*button*/
     transform: translate(187px);
     height: 50px;
     width: 110px;
@@ -128,4 +137,29 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+}
+
+#prestigeupg1 { /*button*/
+    font-family: system-ui;
+    transform: translate(500px);
+}
+
+#prestigeupg2 { /*button*/
+    font-family: system-ui;
+    transform: translate(436px);
+}
+
+#prestigeupg3 { /*button*/
+    font-family: system-ui;
+    transform: translate(320px);
+}
+
+#prestigeupg4 { /*button*/
+    font-family: system-ui;
+    transform: translate(295px);
+}
+
+#prestigeupg5 { /*button*/
+    font-family: system-ui;
+    transform: translate(344px);
 }

@@ -64,9 +64,11 @@ function buyHelpers() { // recurring upgrade 2
     }
     if (upgrades.helpers >= 4) {
             document.getElementsByClassName("coffee")[0].style.display = "block"
+            document.getElementById("info").innerHTML = "1 new upgrade unlocks when you buy more helpers"
     }
     if (upgrades.helpers >= 6) {
             document.getElementsByClassName("blessed")[0].style.display = "block"
+            document.getElementById("info").innerHTML = "a new feature unlocks after buying 4th upgrade(8k stardust)"
     }   
 }
 
@@ -93,6 +95,7 @@ function getBlessed() {
         document.getElementById("getBlessed").innerHTML = "BOUGHT!"
         document.getElementsByClassName("prestigetext")[0].style.visibility = "visible" 
         document.getElementsByClassName("prestigeinfo")[0].style.visibility = "visible" 
+        document.getElementById("info").innerHTML = ""
     }
 }
 
