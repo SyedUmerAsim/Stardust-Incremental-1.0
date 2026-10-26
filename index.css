@@ -75,7 +75,7 @@ body{
     transform: translate(120px);
     color: blanchedalmond;
     font-family: system-ui;
-   border: 2px solid blanchedalmond;
+    border: 2px solid blanchedalmond;
     display: none;
     align-items: center;
     gap: 316px;
@@ -90,7 +90,7 @@ body{
 .prestigetext{
     position: absolute;
     left: 120px;
-    top: 450px;
+    top: 600px;
     color:blanchedalmond;
     font-size: 21px;
     visibility: hidden;
@@ -100,7 +100,7 @@ body{
 .prestigeinfo {
     position: absolute;
     left: 120px;
-    top: 500px;
+    top: 650px;
     color:blanchedalmond;
     font-size: 21px;
     visibility: hidden;
@@ -143,32 +143,71 @@ body{
     font-size: 21px;
     font-family: system-ui;
     transform: translate(107px, 280px);
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     row-gap: 40px;
 }
 
+#prestigeupg1text {
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 505px;
+    padding: 20px;
+}
 #prestigeupg1 { /*button*/
     font-family: system-ui;
-    transform: translate(500px);
+}
+
+#prestigeupg2text {
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 440px;
+    padding: 20px;
 }
 
 #prestigeupg2 { /*button*/
     font-family: system-ui;
-    transform: translate(436px);
+}
+
+#prestigeupg3text {
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 316px;
+    padding: 20px;
 }
 
 #prestigeupg3 { /*button*/
     font-family: system-ui;
-    transform: translate(320px);
+}
+
+#prestigeupg4text {
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 295px;
+    padding: 20px;
 }
 
 #prestigeupg4 { /*button*/
     font-family: system-ui;
-    transform: translate(295px);
+}
+
+#prestigeupg5text {
+    border: 2px solid blanchedalmond;
+    display: inline-flex;
+    align-items: center;
+    gap: 350px;
+    padding: 20px;
 }
 
 #prestigeupg5 { /*button*/
     font-family: system-ui;
-    transform: translate(344px);
+}
+
+
+#invis {
+    color:brown;
 }
