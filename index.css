@@ -1,7 +1,6 @@
-
-
 body{
     background-color: rgb(3, 3, 40);
+    overflow-x: hidden;
 }
 
 #stardustcount {
@@ -207,6 +206,31 @@ body{
     font-family: system-ui;
 }
 
+#funbutton {
+    height: 100px;
+    width: 40px;
+    transform: translateX(1200px);
+}
+
+#funscreen {
+    position: absolute;
+    top: 1030px;
+    display: inline-flex;
+    color:rgb(69, 36, 100);
+    background-color: rgb(116, 112, 112);
+    height: 550px;
+    width: 1200px;
+    visibility: hidden;
+}
+
+#closefunscreen {
+    background-color: red;
+    position: absolute;
+    top: 1050px;
+    left: 1200px;
+    width: 33px;
+    visibility: hidden;
+}
 
 #invis {
     color:brown;

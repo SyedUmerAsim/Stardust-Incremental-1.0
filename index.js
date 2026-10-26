@@ -190,3 +190,13 @@ function prestigeupg5() {
         document.getElementById("prestigeupg5").innerHTML = "BOUGHT!"
     }
 }
+
+function funbutton() {
+    document.getElementById("funscreen").style.visibility = "visible"
+    document.getElementById("closefunscreen").style.visibility = "visible"
+}
+
+function closefunscreen() {
+    document.getElementById("funscreen").style.visibility = "hidden"
+    document.getElementById("closefunscreen").style.visibility = "hidden"
+}
