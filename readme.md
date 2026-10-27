@@ -1,4 +1,4 @@
-# STARDANCE INCREMENTAL
+# STARDUST INCREMENTAL
 **a game made for the "stardance challenge" by hackclub**
 ![alt text](image.png)
 
