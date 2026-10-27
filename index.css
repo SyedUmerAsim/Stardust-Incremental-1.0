@@ -216,7 +216,9 @@ body{
     position: absolute;
     top: 1030px;
     display: inline-flex;
-    color:rgb(69, 36, 100);
+    flex-direction: column;
+    row-gap: 100px;
+    color:rgb(17, 51, 21);
     background-color: rgb(116, 112, 112);
     height: 550px;
     width: 1200px;
@@ -230,6 +232,33 @@ body{
     left: 1200px;
     width: 33px;
     visibility: hidden;
+    font-size: 25px;
+}
+#controlpanel {
+    font-size: 40px;
+    text-align: center;
+}
+
+#BuyStardancetext {
+    font-size: 25px;
+}
+#buystardanceb {
+    transform: translate(-550px, 30px);
+    font-size: 20px;
+}
+#banethmarks {
+    font-size: 25px;
+}
+#banethmarksb {
+    font-size: 20px;
+    transform: translate(-700px, 30px);
+}
+#bantrkl {
+    font-size: 25px;
+}
+#bantrklb {
+    font-size: 20px;
+    transform: translate(-415px, 30px);
 }
 
 #invis {

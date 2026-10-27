@@ -200,3 +200,18 @@ function closefunscreen() {
     document.getElementById("funscreen").style.visibility = "hidden"
     document.getElementById("closefunscreen").style.visibility = "hidden"
 }
+
+function BuyStardance() {
+        document.getElementById("buystardanceb").innerHTML = "BOUGHT!"
+        document.getElementById("banethmarks").style.visibility = "visible"
+        document.getElementById("bantrkl").style.visibility = "visible"
+    }
+
+
+function banethmarks() {
+    document.getElementById("banethmarksb").innerHTML = "BANNED"
+}
+
+function bantrkl() {
+    document.getElementById("bantrklb").innerHTML = "BANNED"
+}
