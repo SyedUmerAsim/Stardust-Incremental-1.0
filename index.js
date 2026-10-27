@@ -1,5 +1,5 @@
 var gameData = {
-    stardust: 1999999999, // control according to will during testing
+    stardust: 0, // control according to will during testing
     stardustPerUpload: 1,
 }
 var upgrades = {
@@ -102,7 +102,7 @@ function getBlessed() {
 function doPrestige() {
     if (gameData.stardust >= prestigeData.requirement) {
         prestigeData.requirement = prestigeData.requirement + prestigeData.requirementinc //still gotta testout to make sure game is balanced
-        gameData.stardust = 1999999999
+        gameData.stardust = 0
         gameData.stardustPerUpload = 1
         upgrades.helpers = 1
         upgrades.coffee = 0
@@ -188,6 +188,7 @@ function prestigeupg5() {
         permanentData.prestigeupg5count = permanentData.prestigeupg5count + 1
         document.getElementById("superstarcount").innerHTML = prestigeData.superstars + " Super Stars"
         document.getElementById("prestigeupg5").innerHTML = "BOUGHT!"
+        document.getElementById("funbutton").style.visibility = "visible"
     }
 }
 
@@ -199,6 +200,8 @@ function funbutton() {
 function closefunscreen() {
     document.getElementById("funscreen").style.visibility = "hidden"
     document.getElementById("closefunscreen").style.visibility = "hidden"
+    document.getElementById("banethmarks").style.visibility = "hidden"
+    document.getElementById("bantrkl").style.visibility = "hidden"
 }
 
 function BuyStardance() {

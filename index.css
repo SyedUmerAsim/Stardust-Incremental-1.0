@@ -24,9 +24,9 @@ body{
 
 .increaseStardustGain { 
     transform: translate(120px);    
-    color:blanchedalmond;
+    color:rgb(172, 172, 122);
     font-family: system-ui;
-    border: 2px solid blanchedalmond;
+    border: 2px solid rgb(172, 172, 122);
     display: inline-flex;
     align-items: center;
     gap: 536px;
@@ -36,13 +36,16 @@ body{
 
 #buyStardustPerUpload { /*button*/
     font-family: system-ui; 
+    background-color: rgba(46, 118, 212, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 .helpers {
     transform: translate(120px);
-    color: blanchedalmond;
+    color: rgb(172, 172, 122);
     font-family: system-ui;
-    border: 2px solid blanchedalmond;
+    border: 2px solid rgb(172, 172, 122);
     display: inline-flex;
     align-items: center;
     gap: 426px;
@@ -52,13 +55,16 @@ body{
 
 #buyHelpers { /*button*/
     font-family: system-ui;
+    background-color: rgba(46, 118, 212, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 .coffee { 
     transform: translate(120px);
-    color: blanchedalmond;
+    color: rgb(172, 172, 122);
     font-family: system-ui;
-    border: 2px solid blanchedalmond;
+    border: 2px solid rgb(172, 172, 122);
     display: none;
     align-items: center;
     gap: 387px;
@@ -68,13 +74,16 @@ body{
 
 #buyCoffee { /*button*/
     font-family: system-ui;
+    background-color: rgba(46, 118, 212, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 .blessed {
     transform: translate(120px);
-    color: blanchedalmond;
+    color: rgb(172, 172, 122);
     font-family: system-ui;
-    border: 2px solid blanchedalmond;
+    border: 2px solid rgb(172, 172, 122);
     display: none;
     align-items: center;
     gap: 316px;
@@ -84,13 +93,16 @@ body{
 
 #getBlessed { /*button*/
     font-family: system-ui;
+    background-color: rgba(46, 118, 212, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 .prestigetext{
     position: absolute;
     left: 120px;
     top: 600px;
-    color:blanchedalmond;
+    color:rgb(172, 172, 122);
     font-size: 21px;
     visibility: hidden;
     font-family: system-ui;
@@ -100,7 +112,7 @@ body{
     position: absolute;
     left: 120px;
     top: 650px;
-    color:blanchedalmond;
+    color:rgb(172, 172, 122);
     font-size: 21px;
     visibility: hidden;
     font-family: system-ui;
@@ -110,17 +122,20 @@ body{
     transform: translate(187px);
     height: 50px;
     width: 110px;
+    background-color: rgba(20, 75, 141, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 .prestigecount {
-    color:blanchedalmond;
+    color:rgb(172, 172, 122);
     font-size: 31px;
     font-family: system-ui;
     transform: translate(580px, 265px);
 }
 
 #superstarcount {
-    color:blanchedalmond;
+    color:rgb(172, 172, 122);
     font-size: 31px;
     transform: translate(580px, 250px);
     font-family: system-ui;
@@ -131,14 +146,14 @@ body{
 }
 
 #pupgtext {
-    color: blanchedalmond;
+    color: rgb(172, 172, 122);
     font-size: 30px;
     font-family: system-ui;
     transform: translate(580px, 230px);
 }
 
 .prestigeupgs {
-    color:blanchedalmond;
+    color:rgb(172, 172, 122);
     font-size: 21px;
     font-family: system-ui;
     transform: translate(107px, 280px);
@@ -156,6 +171,9 @@ body{
 }
 #prestigeupg1 { /*button*/
     font-family: system-ui;
+    background-color: rgba(20, 75, 141, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 #prestigeupg2text {
@@ -168,6 +186,9 @@ body{
 
 #prestigeupg2 { /*button*/
     font-family: system-ui;
+    background-color: rgba(20, 75, 141, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 #prestigeupg3text {
@@ -180,6 +201,9 @@ body{
 
 #prestigeupg3 { /*button*/
     font-family: system-ui;
+    background-color: rgba(20, 75, 141, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 #prestigeupg4text {
@@ -192,6 +216,9 @@ body{
 
 #prestigeupg4 { /*button*/
     font-family: system-ui;
+    background-color: rgba(20, 75, 141, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 #prestigeupg5text {
@@ -204,6 +231,9 @@ body{
 
 #prestigeupg5 { /*button*/
     font-family: system-ui;
+    background-color: rgba(20, 75, 141, 0.616);
+    color:rgb(235, 235, 226);
+    font-size: 15px;
 }
 
 #funbutton {
@@ -243,8 +273,10 @@ body{
     font-size: 25px;
 }
 #buystardanceb {
-    transform: translate(-550px, 30px);
+    transform: translate(50px, 30px);
     font-size: 20px;
+    background-color: rgba(11, 66, 6, 0.616);
+    color:rgb(235, 235, 226);
 }
 #banethmarks {
     font-size: 25px;
@@ -252,6 +284,8 @@ body{
 #banethmarksb {
     font-size: 20px;
     transform: translate(-700px, 30px);
+    background-color: rgba(11, 66, 6, 0.616);
+    color:rgb(235, 235, 226);
 }
 #bantrkl {
     font-size: 25px;
@@ -259,8 +293,20 @@ body{
 #bantrklb {
     font-size: 20px;
     transform: translate(-415px, 30px);
+    background-color: rgba(11, 66, 6, 0.616);
+    color:rgb(235, 235, 226);
+}
+#image {
+    position: absolute;
+    top: 250px;
+    left: 800px;
 }
 
 #invis {
     color:brown;
+    visibility: hidden;
+}
+
+#funbutton{
+    visibility: hidden;
 }
